@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(3, 2, 19, 0.1);
+  backdrop-filter: blur(20px);
+  height: 6em;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navbar .container {
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .container .logo img {
+  height: 4em;
+  margin-right: 0.2em;
+}
+.navbar .container .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar .container .logo a p {
+  color: white;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+.navbar .container .menu img:hover {
+  cursor: pointer;
+}
+.navbar .container .nav-kanan .Sub-Menu {
+  margin: 0 0.8em;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 0.3em;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.navbar .container .nav-kanan .Sub-Menu:hover {
+  transition: 0.3s;
+  border-bottom: solid 1px whitesmoke;
+  padding-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.123em;
+}
+
+.hidingMenu {
+  display: none !important;
+}
+
+.isi-menu {
+  background: rgba(193, 192, 192, 0.7);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  justify-content: right;
+  display: flex;
+}
+.isi-menu .container {
+  background: linear-gradient(to bottom, #030213, #09046b);
+  width: 50%;
+  padding: 1em;
+}
+.isi-menu .container .logo {
+  display: flex;
+  border-bottom: solid 2px #ffffff;
+  justify-content: space-between;
+}
+.isi-menu .container .logo a {
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: white;
+}
+.isi-menu .container .logo a p {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+.isi-menu .container .logo a img {
+  height: 4em;
+}
+.isi-menu .container ul {
+  padding-top: 1em;
+  padding: 0;
+}
+.isi-menu .container ul li {
+  padding: 1em 0;
+  list-style: none;
+}
+.isi-menu .container ul li a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  padding-left: 0.5em;
+  border-radius: 10px;
+  display: flex;
+}
+.isi-menu .container ul li a:hover {
+  transition: 0.5s;
+  padding-left: 1em;
+}
+.isi-menu .exit {
+  background-color: #030213;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.3em 0.5em;
+  padding-right: 1em;
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isi-menu .exit img:hover {
+  cursor: pointer;
+}
+.isi-menu .exit .exitBtn {
+  height: 10px;
+}
+
+.hero-section {
+  padding-top: 6em;
+  padding-right: 15em;
+  padding-left: 15em;
+  background: linear-gradient(to bottom, #030213, #09046b);
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+.hero-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero-section .container .hero-logo img {
+  height: 35em;
+}
+.hero-section .container .hero-description {
+  margin-top: -50px;
+}
+.hero-section .container .hero-description h1 {
+  font-size: 5em;
+  color: white;
+}
+.hero-section .container .hero-description h3 {
+  margin-top: -70px;
+  font-size: 2.3em;
+  color: white;
+  font-weight: 300;
+}
+.hero-section .container .hero-description p {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+
+.event-section {
+  background: linear-gradient(to bottom, #09046b, #002f86, #09046b);
+  margin-top: 0;
+  padding: 6em 10em;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.event-section .container .live-event .Sub-Menu {
+  color: white;
+  font-size: 2.5em;
+}
+.event-section .container .video video {
+  border-radius: 10%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: solid rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgba(255, 255, 255, 0.5);
+}
+.event-section .container .keterangan-event {
+  color: white;
+}
+
+.FooterSection {
+  padding: 0em;
+  background: linear-gradient(to bottom, #09046b, #030213);
+  padding-top: 200px;
+}
+.FooterSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FooterSection .container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+}
+.FooterSection .container .card .isi-card {
+  width: 17em;
+  height: 17em;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(100px);
+  border-bottom: solid 2px white;
+  border-left: solid 2px white;
+}
+.FooterSection .container .card .isi-card .isi-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FooterSection .container .card .isi-card .logo-lokasi {
+  margin: 4em 0 1em 0;
+}
+.FooterSection .container .card .isi-card .Logo {
+  height: 7.5em;
+}
+.FooterSection .container .card .isi-card h1 {
+  margin-top: 0;
+  font-weight: 400;
+}
+.FooterSection .container .card .isi-card h3 {
+  margin-top: -10px;
+  font-weight: 300;
+}
+.FooterSection .container .card .isi-card .location {
+  height: 4em;
+}
+.FooterSection .container .card .isi-card .sosmed img {
+  height: 4em;
+}
+.FooterSection .container .card .daftar {
+  display: flex;
+}
+.FooterSection .container .card .sosmed {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 6.5em;
+  height: 7em;
+  margin: 1em;
+  border-radius: 10px;
+  border-bottom: solid white 0.7px;
+  border-left: solid white 0.7px;
+}
+.FooterSection .container .card .sosmed img {
+  padding: 0.5em 4em 0.2em 4em;
+}
+.FooterSection .container .card .sosmed a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding-bottom: 0.5em;
+}
+
+@media (min-width: 1000px) {
+  .navbar .menu img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar .nav-kanan {
+    display: none;
+  }
+  .navbar .menu img {
+    display: block;
+  }
+  .hero-section .conntainer {
+    padding-top: 6em;
+  }
+}
+@media (max-width: 1140px) {
+  .hero-section .container {
+    display: grid;
+    padding-top: 6em;
+    height: 100%;
+    padding-bottom: 8em;
+  }
+  .hero-section .container .hero-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .container .hero-logo img {
+    height: 30em;
+  }
+  .hero-section .container .hero-description {
+    text-align: center;
+  }
+  .hero-section .container .hero-description h1 {
+    font-size: 4em;
+  }
+  .hero-section .container .hero-description h3 {
+    font-size: 1.5em;
+    margin-top: -50px;
+  }
+  .hero-section .container .hero-description p {
+    font-size: 1em;
+  }
+  .FooterSection {
+    width: 100%;
+    display: flex;
+  }
+  .FooterSection .container {
+    padding-top: 5em;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .video video {
+    height: 200px;
+  }
+  .event-section {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .event-section {
+    padding: 0;
+    min-height: 0;
+  }
+  .navbar .conntainer {
+    padding-bottom: 0;
+  }
+  .hero-section {
+    min-height: 0;
+    padding: 3em 0;
+  }
+  .hero-section .container {
+    display: grid;
+    padding-top: 3em;
+    height: 100%;
+    padding-bottom: 8em;
+    margin: 0;
+  }
+  .hero-section .container .hero-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .container .hero-logo img {
+    height: 20em;
+  }
+  .hero-section .container .hero-description {
+    text-align: center;
+  }
+  .hero-section .container .hero-description h1 {
+    font-size: 3em;
+  }
+  .hero-section .container .hero-description h3 {
+    font-size: 1em;
+    margin-top: -20px;
+  }
+  .hero-section .container .hero-description p {
+    font-size: 0.5em;
+  }
+  .navbar .container {
+    padding: 0 1em;
+  }
+  .event-section {
+    padding-top: 6em;
+  }
+}/*# sourceMappingURL=main.css.map */
